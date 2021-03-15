@@ -4,12 +4,13 @@ import {useDispatch, useSelector} from 'react-redux';
 import {styles} from './styles';
 import {Timing} from './logic';
 import {ThunkFunc} from './redux/actions';
+import {strings} from '../../constants';
 
 const CandleScreen = () => {
   const back = require('../../images/back.png');
   const candle = require('../../images/candle.png');
   const clock = require('../../images/clock.png');
-  
+
   const arrowRight = require('../../images/arrowRight.png');
   const arrowLeft = require('../../images/arrowLeft.png');
   const addProduct = require('../../images/addProduct.png');
@@ -20,7 +21,6 @@ const CandleScreen = () => {
 
   useEffect(() => {
     dispatch(ThunkFunc(jsonData));
-    
   }, []);
 
   return (
@@ -39,14 +39,14 @@ const CandleScreen = () => {
           <Image style={styles.timer} source={clock} />
 
           <View style={styles.timerTextContainer}>
-            <Text style={{color: 'white'}}>Осталось: </Text>
+            <Text style={{color:'#ffffff'}}>Осталось: </Text>
             <Timing />
           </View>
         </View>
       </View>
 
       <View style={styles.imageContainer}>
-        <Image style={{width: '80%', height:'100%'}} source={candle} />
+        <Image style={{width: '80%', height: '100%'}} source={candle} />
       </View>
 
       <View style={styles.infoContainer}>
@@ -77,16 +77,18 @@ const CandleScreen = () => {
 
         <View style={styles.toBuyAndSoldContainer}>
           <Text style={styles.toBuyAndSoldText}>
-            Надо выкупить:
-            <Text style={{color: 'black'}}>{dataFromStore.mustHave} </Text>
+            {strings.toBuy}
+            <Text style={{color: '#000000'}}>{dataFromStore.mustHave} </Text>
           </Text>
           <Text style={styles.toBuyAndSoldText}>
-            Выкуплено:
-            <Text style={{color: 'black'}}> {dataFromStore.sold} </Text>
+            {strings.sold}
+            <Text style={{color: '#000000'}}> {dataFromStore.sold} </Text>
           </Text>
         </View>
-        <Text style={styles.hashCode}>Арт./Код: {dataFromStore.hashCode}</Text>
-      </View>      
+        <Text style={styles.hashCode}>
+          {strings.art_code} {dataFromStore.hashCode}
+        </Text>
+      </View>
       {/* </ScrollView> */}
     </View>
   );

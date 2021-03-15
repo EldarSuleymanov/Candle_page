@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
     backgroundColor: 'blue',
     // flex: 0.5,
     height: '55%',
-    borderBottomColor: 'lightgrey',
+    borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
   },
 
@@ -107,7 +107,7 @@ export const styles = StyleSheet.create({
   Tables: {
     fontSize: 12,
     width: 80,
-    borderColor: 'grey',
+    borderColor: '#808080',
     borderWidth: 1,
     textAlign: 'center',
     textAlignVertical: 'center',
@@ -115,20 +115,20 @@ export const styles = StyleSheet.create({
 
   toBuyAndSoldContainer: {
     flexDirection: 'row',
-    borderBottomColor: 'lightgrey',
+    borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
     justifyContent: 'space-between',
   },
 
   toBuyAndSoldText: {
     marginLeft: 10,
-    color: 'grey',
+    color: '#808080',
   },
 
   hashCode: {
     marginLeft: 10,
     height: '22%',
-    color: 'grey',
+    color: '#808080',
     textAlignVertical: 'center',
   },
 
