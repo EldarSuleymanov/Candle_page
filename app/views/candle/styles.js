@@ -3,12 +3,13 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   mainView: {
     flex: 1,
+    backgroundColor:'red'
   },
 
   headerContainer: {
     backgroundColor: '#ff3200',
     width: '100%',
-    height: '10%',
+    height: '9%',
     flexDirection: 'row',
     justifyContent: 'space-between',
     // flex: 0.1,
@@ -24,14 +25,13 @@ export const styles = StyleSheet.create({
   backButton: {
     width: 20,
     height: 20,
-    marginTop: 24,
-    marginLeft: 10,
+    marginLeft: '12%',
   },
   emptyContainer: {
     width: 20,
     height: 20,
-    marginTop: 24,
-    marginRight: 10,
+    marginTop: '30%',
+    marginRight: '12%',
   },
 
   timerContainer: {
@@ -42,14 +42,11 @@ export const styles = StyleSheet.create({
   },
 
   timerTextContainer: {
-    flexDirection: 'column',
     marginLeft: 15,
-    marginTop: '1%',
   },
 
   timer: {
-    marginLeft: 10,
-    marginTop: 15,
+    marginLeft: '2%',
     width: 20,
     height: 20,
   },
@@ -57,15 +54,15 @@ export const styles = StyleSheet.create({
   imageContainer: {
     backgroundColor: 'blue',
     // flex: 0.5,
-    height: '55%',
+    height: '68%',
     borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
   },
 
   infoContainer: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'yellow',
     width: '100%',
-    height: '35%',
+    height: '20%',
     // flex: 0.22,
   },
 
@@ -79,13 +76,13 @@ export const styles = StyleSheet.create({
   productName: {
     // backgroundColor: 'yellow',
     textAlignVertical: 'center',
-    fontSize: 20,
+    fontSize: 18,
     marginLeft: 10,
   },
 
   mainPrice: {
     marginLeft: 10,
-    fontSize: 25,
+    fontSize: 20,
     // backgroundColor: 'green',
     width: '50%',
   },
@@ -130,15 +127,5 @@ export const styles = StyleSheet.create({
     height: '22%',
     color: '#808080',
     textAlignVertical: 'center',
-  },
-
-  tabNavigartion: {
-    flexDirection: 'row',
-    backgroundColor: '#ffffff',
-    width: '100%',
-    height: '10%',
-    // flex: 0.1,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
+  },  
 });

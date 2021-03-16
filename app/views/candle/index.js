@@ -27,7 +27,7 @@ const CandleScreen = () => {
     <View style={styles.mainView}>
       {/* <ScrollView> */}
       <View style={styles.headerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity style={{justifyContent:'center'}} >
           <Image style={styles.backButton} source={back} />
         </TouchableOpacity>
         <Text style={styles.headerText}>Получатель</Text>
@@ -35,9 +35,9 @@ const CandleScreen = () => {
       </View>
 
       <View style={styles.timerContainer}>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', alignItems:'center', height:'100%'}}>
           <Image style={styles.timer} source={clock} />
-
+          
           <View style={styles.timerTextContainer}>
             <Text style={{color:'#ffffff'}}>Осталось: </Text>
             <Timing />
@@ -46,7 +46,7 @@ const CandleScreen = () => {
       </View>
 
       <View style={styles.imageContainer}>
-        <Image style={{width: '80%', height: '100%'}} source={candle} />
+        <Image style={{width: '100%', height: '100%'}} source={candle} />
       </View>
 
       <View style={styles.infoContainer}>
