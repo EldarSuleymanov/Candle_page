@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
     textAlignVertical: 'center',
     fontSize: 20,
     marginLeft: '2%',
-    height:'15%'
+    height:'15%',
   },
 
   mainPrice: {
