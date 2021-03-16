@@ -3,13 +3,12 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   mainView: {
     flex: 1,
-    backgroundColor:'red'
   },
 
   headerContainer: {
     backgroundColor: '#ff3200',
     width: '100%',
-    height: '9%',
+    height: '8%',
     flexDirection: 'row',
     justifyContent: 'space-between',
     // flex: 0.1,
@@ -25,13 +24,13 @@ export const styles = StyleSheet.create({
   backButton: {
     width: 20,
     height: 20,
-    marginLeft: '12%',
+    marginLeft: '15%',
   },
   emptyContainer: {
     width: 20,
     height: 20,
     marginTop: '30%',
-    marginRight: '12%',
+    marginRight: '15%',
   },
 
   timerContainer: {
@@ -46,49 +45,51 @@ export const styles = StyleSheet.create({
   },
 
   timer: {
-    marginLeft: '2%',
+    marginLeft: '3%',
     width: 20,
     height: 20,
   },
 
   imageContainer: {
-    backgroundColor: 'blue',
-    // flex: 0.5,
-    height: '68%',
+    // flex: 0.55,
+    height: '55%',
     borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
+    alignItems:'center'
   },
 
   infoContainer: {
-    backgroundColor: 'yellow',
+    // backgroundColor: 'yellow',
     width: '100%',
-    height: '20%',
-    // flex: 0.22,
+    height: '32%',
+    // flex: 0.22,    
   },
 
   infoSubContainer: {
     flexDirection: 'row',
     // backgroundColor: 'grey',
-    height: '35%',
+    height: '40%',
     justifyContent: 'space-between',
   },
 
   productName: {
-    // backgroundColor: 'yellow',
+    // backgroundColor: 'red',
     textAlignVertical: 'center',
-    fontSize: 18,
-    marginLeft: 10,
+    fontSize: 20,
+    marginLeft: '2%',
+    height:'15%'
   },
 
   mainPrice: {
-    marginLeft: 10,
-    fontSize: 20,
+    marginLeft: '3%',
+    fontSize: 24,
+    height:'50%',
+    width:'80%',
     // backgroundColor: 'green',
-    width: '50%',
   },
 
   greenBucket: {
-    marginRight: 10,
+    marginRight: '3%',
     height: 60,
     width: 60,
   },
@@ -98,16 +99,18 @@ export const styles = StyleSheet.create({
     width: '90%',
     // backgroundColor: 'red',
     justifyContent: 'space-between',
-    marginLeft: 10,
+    marginLeft: '3%',
+    height:'50%'
   },
 
   Tables: {
     fontSize: 12,
-    width: 80,
+    width: '30%',
     borderColor: '#808080',
     borderWidth: 1,
     textAlign: 'center',
     textAlignVertical: 'center',
+    // backgroundColor:'green'
   },
 
   toBuyAndSoldContainer: {
@@ -115,17 +118,22 @@ export const styles = StyleSheet.create({
     borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
     justifyContent: 'space-between',
+    height:'17%'
   },
 
   toBuyAndSoldText: {
-    marginLeft: 10,
+    marginLeft: '3%',
     color: '#808080',
+    marginRight:'3%',
+    textAlignVertical:'center',
+    // backgroundColor:'blue'
   },
 
   hashCode: {
-    marginLeft: 10,
-    height: '22%',
+    marginLeft: '3%',
     color: '#808080',
     textAlignVertical: 'center',
+    // backgroundColor:'green',
+    height:'100%'
   },  
 });

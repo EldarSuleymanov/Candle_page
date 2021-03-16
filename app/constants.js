@@ -5,7 +5,9 @@ export const strings = {
   hours: 'ЧАСОВ(A)',
   minutes: 'МИНУТ(Ы)',
   seconds: 'СЕКУНД(Ы)',
-  toBuy: 'Надо выкупить:',
+  toBuy: 'Нужно выкупить:',
   sold: 'Выкуплено:',
   art_code: 'Арт./Код:',
+  recipient: 'Получатель',
+  left: 'Осталось:',
 };

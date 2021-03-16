@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ScrollView, SafeAreaView} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {styles} from './styles';
 import {Timing} from './logic';
@@ -24,13 +24,13 @@ const CandleScreen = () => {
   }, []);
 
   return (
-    <View style={styles.mainView}>
+    <SafeAreaView style={styles.mainView}>
       {/* <ScrollView> */}
       <View style={styles.headerContainer}>
         <TouchableOpacity style={{justifyContent:'center'}} >
           <Image style={styles.backButton} source={back} />
         </TouchableOpacity>
-        <Text style={styles.headerText}>Получатель</Text>
+        <Text style={styles.headerText}>{strings.recipient}</Text>
         <View style={styles.emptyContainer} />
       </View>
 
@@ -39,17 +39,20 @@ const CandleScreen = () => {
           <Image style={styles.timer} source={clock} />
           
           <View style={styles.timerTextContainer}>
-            <Text style={{color:'#ffffff'}}>Осталось: </Text>
+            <Text style={{color:'#ffffff'}}>{strings.left} </Text>
             <Timing />
           </View>
         </View>
       </View>
 
       <View style={styles.imageContainer}>
-        <Image style={{width: '100%', height: '100%'}} source={candle} />
+        <Image style={{width: '60%', height: '100%'}} source={candle} />
       </View>
 
       <View style={styles.infoContainer}>
+        <View style = {{flex:1}}>
+
+        
         <Text style={styles.productName}>{dataFromStore.product_name}</Text>
 
         <View style={styles.infoSubContainer}>
@@ -58,7 +61,7 @@ const CandleScreen = () => {
 
             <View style={styles.containerForTables}>
               <TouchableOpacity>
-                <Image source={arrowLeft} />
+                <Image style={{height:'100%'}} source={arrowLeft} />
               </TouchableOpacity>
 
               <Text style={styles.Tables}>{dataFromStore.priceFor3}</Text>
@@ -66,7 +69,7 @@ const CandleScreen = () => {
               <Text style={styles.Tables}>{dataFromStore.priceFor20}</Text>
 
               <TouchableOpacity>
-                <Image source={arrowRight} />
+                <Image style={{height:'100%'}} source={arrowRight} />
               </TouchableOpacity>
             </View>
           </View>
@@ -85,12 +88,16 @@ const CandleScreen = () => {
             <Text style={{color: '#000000'}}> {dataFromStore.sold} </Text>
           </Text>
         </View>
+        <View style ={{height:"17%"}}>
         <Text style={styles.hashCode}>
           {strings.art_code} {dataFromStore.hashCode}
         </Text>
+
+        </View>
+      </View>
       </View>
       {/* </ScrollView> */}
-    </View>
+    </SafeAreaView>
   );
 };
 
