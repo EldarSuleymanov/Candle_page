@@ -55,11 +55,12 @@ export const styles = StyleSheet.create({
     height: '55%',
     borderBottomColor: '#d3d3d3',
     borderBottomWidth: 1,
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor:'#ffffff'
   },
 
   infoContainer: {
-    // backgroundColor: 'yellow',
+    backgroundColor: '#ffffff',
     width: '100%',
     height: '32%',
     // flex: 0.22,    
